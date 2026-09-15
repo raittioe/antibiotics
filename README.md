@@ -12,6 +12,7 @@ tidyverse, readxl, MASS, glmmTMB, ggplot2, ggpubr, sf, mapsFinland
 ## Reproducibility
 Download data.xlsx to working directory.
 Run script.R from the working directory.
+Script saves the figures to the working directory.
 
 ## Variables
 See codebook section in script.R.
