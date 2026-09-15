@@ -1,6 +1,5 @@
-# Regional dental antibiotic prescribing in Finland
-
-R scripts and aggregated regional data used for analyses and figures.
+# R scripts and aggregated regional data used for analyses and figure for "Trends and regional variation in antibiotic prescribing by
+dentists in Finland, 2012-2025: a register-based study" by Laitala, Aarnio, Tuomilinna, Raittio, Leinonen published in European Journal of Oral Sciences
 
 ## Files
 - data.xlsx = aggregated regional dataset
@@ -11,7 +10,8 @@ R packages:
 tidyverse, readxl, MASS, glmmTMB, ggplot2, ggpubr, sf, mapsFinland
 
 ## Reproducibility
-Run script.R from the project directory.
+Download data.xlsx to working directory.
+Run script.R from the working directory.
 
 ## Variables
 See codebook section in script.R.
