@@ -1,7 +1,12 @@
 
+# R packages required : tidyverse, readxl, MASS, glmmTMB, ggplot2, ggpubr, sf, mapsFinland
+
 library(tidyverse)
 library(readxl)
-data6 <- read_excel("data.xlsx")
+data6 <- read_excel("data.xlsx") # load from directory and change working directory if you want to, the script is going to save figures to the working directory.
+
+# setwd( XXX )
+
 # Codebook:
 
 # pres_* = antibiotic prescriptions by dentists
@@ -386,7 +391,7 @@ df_long <- data6[,c(1:54,74)] %>%
     values_from = value
   )
 
-
+library(glmmTMB)
 # Base model 2019-2025: year + offset, random intercept for county
 m0 <- glmmTMB(
   pres ~ factor(year) + offset(log(pop)) + (1 | Region),
